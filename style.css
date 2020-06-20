@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: url('/assets/main_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Body {
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.TopHeader {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 8px 40px 8px #000000;
+  background-image: url('/assets/top.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TopHeader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000080;
+}
+
+.TopHeader__title {
+  margin: 0;
+  font-size: 40px;
+}
+
+.TopHeader__title,
+.TopHeader__subtitle {
+  z-index: 2;
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.GeoForm {
+  padding: 20px;
+  background-color: #000000c4;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.GeoForm__input {
+  width: 100%;
+  height: 30px;
+}
+
+.GeoForm__horizontalGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.GeoForm__submitButton {
+  display: block;
+  margin: 20px auto 0;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+}

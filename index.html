@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Гадания по геолокации</title>
+</head>
+<body class="Body">
+  <header class="TopHeader">
+    <h1 class="TopHeader__title">Онлайн-гадания по геолокации</h1>
+    <h3 class="TopHeader__subtitle">Узнай свою судьбу!</h2>  
+  </header>
+
+  <main class="Main">
+    <form class="GeoForm">
+      <label class="GeoForm__label">
+        <h4 class="GeoForm__labelText">
+          Ваше имя:
+        </h4>
+        <input type="text" name="name" id="geo_form_name" class="GeoForm__input" required>
+      </label>
+
+      <label class="GeoForm__label">
+        <h4 class="GeoForm__labelText">
+          Город:
+        </h4>
+        <input type="text" name="city" id="geo_form_city" class="GeoForm__input" required>
+      </label>
+
+      <label class="GeoForm__label">
+        <h4 class="GeoForm__labelText">
+          Улица:
+        </h4>
+        <input type="text" name="street" id="geo_form_street" class="GeoForm__input" required>
+      </label>
+
+      <section class="GeoForm__horizontalGroup">
+        <label class="GeoForm__label">
+          <h4 class="GeoForm__labelText">
+            Дом:
+          </h4>
+          <input type="text" name="house" id="geo_form_house" class="GeoForm__input" required>
+        </label>
+
+        <label class="GeoForm__label">
+          <h4 class="GeoForm__labelText">
+            Корпус:
+          </h4>
+          <input type="text" name="building" id="geo_form_building" class="GeoForm__input">
+        </label>
+
+        <label class="GeoForm__label">
+          <h4 class="GeoForm__labelText">
+            Квартира:
+          </h4>
+          <input type="text" name="apartment" id="geo_form_apartment" class="GeoForm__input" required>
+        </label>
+      </section>
+
+      <button type="submit" class="GeoForm__submitButton">
+        Гадать!
+      </button>
+    </form>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
